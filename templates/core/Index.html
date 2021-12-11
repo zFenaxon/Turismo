@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turismo Real - Arriendos De Temporada</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'core/css/estilos.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header>
+
+        <div class="contenedor_logo">
+            <a href="{% url 'index' %}"><img src="{% static 'core/img/TR_LOGO.png' %}" alt="logo" class="logo"></a>
+        </div>
+        
+        <div>
+
+            <nav class="nav">
+                <ul>
+                    <li>
+                        
+                        <a title="Menu" href="{% url 'login'%}"><img src="{% static 'core/img/menu.png' %}" alt="userlogo" class="icon"/></a>
+                        <!--<a href="">Inicio</a>-->
+                    </li>
+                    <li>
+                        
+                        <a title="Iniciar Sesion" href="{% url 'login'%}"><img src="{% static 'core/img/usersolid.png' %}" alt="userlogo" class="icon"/></a>
+                        <!--<a href="">Inicio</a>-->
+                    </li>
+                    <li>
+                        <img src="{% static 'core/img/phone-call.png'%}" alt="contact" class="icon">
+                    </li>
+                    <li>
+                        <img src="{% static 'core/img/marker.png' %}" alt="contact" class="icon">
+                    </li>
+                </ul>
+            </nav>
+
+
+        </div>
+
+    </header>
+    <div id="contenido">
+        <h1>Turismo Real</h1>
+        <p>Turismo real es una empresa dedicada al arriendo de departamentos por temporadas en zonas turísticas, contamos con más de 8 departamento a lo largo y ancho de todo Chile, nuestro principal objetivo es el que tú disfrutes, también nos encargamos de llevarte a los lugares turísticos cerca de los departamentos y otros servicios a precios convenientes, revisa nuestros servicios para que tu viaje no sea un simple viaje, si no que un recuerdo involvidable</p>
+        </p>
+        <div class="center">
+        <a href="{% url 'Test' %}"><h1 class="center">Mostrar Algo</h1></a>
+        </div>
+        
+    </div>
+
+    {% block content %}
+    {% endblock %}
+      
+
+    <footer>
+        
+    </footer>
+</body>
+</html>
